@@ -229,3 +229,26 @@ void play_IA(std::array <char,9>& croquis,std::array <char,9>& tab,Player player
 
 }
 
+//MEGA morpion 
+
+void draw_mega_morpion (std::array <std::array <char,9>,9>& mega_tab)
+{
+    for ( int i=0;i<9;i++)
+    {
+        for ( int j=0;j<9;j++)
+        {
+            if(j==3 || j==6 )
+            {std::cout<<"|  ";};
+            std::cout<<"| "<<mega_tab[i][3*i+j]<<" ";
+        }
+        
+        std::cout<<"|"<<std::endl;
+        if(i==2 || i==5)
+            {
+                std::cout<<std::endl;
+            }
+    }
+}
+
+
+

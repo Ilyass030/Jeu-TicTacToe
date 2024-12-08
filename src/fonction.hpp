@@ -17,3 +17,6 @@ void play_2x2(std::array <char,9>& croquis,std::array <char,9>& tab,Player playe
 
 void play_IA(std::array <char,9>& croquis,std::array <char,9>& tab,Player player,Player player_ia);
 
+//Mega Morpion
+
+void draw_mega_morpion (std::array <std::array <char,9>,9>& mega_tab);
