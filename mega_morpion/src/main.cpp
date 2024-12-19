@@ -35,6 +35,7 @@ int main()
         std::cout<<std::endl;
     }
 
+    std::array <char,9> validation {' '};//def d'une liste qui fera office de la grande grille
 
     std::array <char,9> croquis {'0','1','2','3','4','5','6','7','8'};
     std::array <std::array <char,9>,9> mega_croquis {};
@@ -50,5 +51,21 @@ int main()
     {
         elt=tab;
     }
-    screen_mega(mega_croquis,mega_tab);
+    screen_mega(mega_croquis,mega_tab,0,validation);
+
+    switch (mode)
+    {
+    case 2:
+        play_2x2(mega_croquis,mega_tab,player1,player2,validation);
+        break;
+    // case 1:
+    //     play_IA(croquis,tab,player,player_ia,mode);
+    //     break;
+    // case 3:
+    //     play_IA(croquis,tab,player,player_ia,mode);
+    //     break;
+    default:
+        break;
+
+    }
 }
